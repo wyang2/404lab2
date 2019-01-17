@@ -1,0 +1,23 @@
+Socket:
+
+.socket: create new socket using given address family, socket type and protocol number.  Address is "AF_INET", socket type is "SOCK_STREAM", protocol number is 0.
+
+.connect: connect to a remote socket at address
+
+.sendall: send data to the socket
+
+.recv: receive data from the socket.  The return value is a bytes object representing the data received. Max amount of data to be received at once is specified by bufsize.
+
+.setsockopt(level, owtname, None, option: int): set the value of the given socket option.
+
+.bind(address): Bind the socket to address. Format of address depends on address family.
+
+.listen([backlog]): Enable a server to accept connection
+
+.accept(): Accept a connection. The socket must be bound to an address and listening for connections. Return (conn, address), conn is a new socket object usable to send and receive data on connection and address is the address bound to the socket on the other end of connection.
+
+.getaddrinfo(host, port, family=0, type=0, proto=0, flags=0): Translate the host/port argument into a sequence of 5-typles that contain all the necessary arguments for creating a socket connected to that service. (Family, type, protocol, cannonade, sockaddr)
+
+Lab:
+
+
